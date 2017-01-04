@@ -1,0 +1,19 @@
+@media screen and (min-width: 620px) {
+  #countbox1 {
+    font-size: 5vw;
+  }
+  .main {
+    background-size: 623px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 619px) {
+  .countdown {
+    height: 20vh;
+  }
+
+  .main {
+    height: 80vh;
+    background-size: 400px;
+  }
+}
