@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <link rel="stylesheet" type="text/css" href="css/mediaqueries.css"/>
     <link rel="shortcut icon" href = "img/favicon.ico">
-    <script src="../startpage/jquery.js"></script>
+    <script src="jquery.js"></script>
   </head>
 
 <body>
@@ -125,7 +125,61 @@ window.onload=function(){
   <div class="background">
     <a href="https://www.festicket.com/packages/download-festival-paris-2017/3-days-pass/"><img src="img/dlfrance2017-logo.png" alt="Download Paris Logo"></a>
   </div>
+  <div class="scroller">
+    <a href="#lineup"><img src="img/arrowdown.png"></a>
+  </div>
 </div>
 </div>
+<div id="lineup">
+  <h2>FRIDAY 09 JUNE</h2>
+  <ul>
+    <li>LINKIN PARK</li>
+    <li>BLINK-182</li>
+    <li>SKINNY PUPPY</li>
+    <li>PIERCE THE VEIL</li>
+    <li>DAGOBA</li>
+  </ul>
+
+  <h2>SATURDAY 10 JUNE</h2>
+  <ul>
+    <li>SYSTEM OF A DOWN</li>
+    <li>FIVE FINGER DEATH PUNCH</li>
+    <li>SLAYER</li>
+    <li>ALTER BRIDGE</li>
+    <li>DEVILDRIVER</li>
+    <li>LONELY THE BRAVE</li>
+  </ul>
+
+  <h2>SUNDAY, JUNE 11</h2>
+  <ul>
+    <li>GREEN DAY</li>
+    <li>PROPHETS OF RAGE</li>
+    <li>RANCID</li>
+    <li>MASTODON</li>
+    <li>SUICIDAL TENDENCIES</li>
+    <li>CONVERGE</li>
+    <li>ARCHITECTS</li>
+    <li>CARPENTER BRUT</li>
+    <li>KONTRUST</li>
+    <li>WAKRAT</li>
+  </ul>
+  </p>
+</div>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 700);
+        return false;
+      }
+    }
+  });
+});
+</script>
 </body>
 </html>
