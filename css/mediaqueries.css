@@ -1,10 +1,38 @@
+@media screen and (min-width: 800px) {
+  .links {
+  	height: 30%;
+  }
+
+  .background {
+  	height: 70%;
+  }
+
+  .background img {
+  	width: 600px;
+  }
+
+}
+
 @media screen and (min-width: 620px) {
   #countbox1 {
-    font-size: 5vw;
+    font-size: 5.2vw;
   }
   .main {
     background-size: 623px;
+    background-position: center;
   }
+  .links img {
+    height: 200px;
+  }
+
+  .links {
+  	height: 38%;
+  }
+
+  .background {
+  	height: 52%;
+  }
+
 }
 
 @media screen and (min-width: 400px) and (max-width: 619px) {
