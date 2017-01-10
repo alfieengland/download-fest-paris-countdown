@@ -56,9 +56,12 @@
 
 .links img {
 	height: 160px;
+}
+
+.main img {
 	transition: transform 0.2s ease;
 }
 
-.links img:hover {
+.main img:hover {
 	transform: scale(1.1);
 }
