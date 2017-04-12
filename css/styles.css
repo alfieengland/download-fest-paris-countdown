@@ -67,6 +67,12 @@
 	transform: scale(1.1);
 }
 
+.main h2 {
+	color: white;
+	font-weight: lighter;
+	font-size: 250%;
+}
+
 .scroller a {
 	color: #ffffff;
 	font-size: 150%;
